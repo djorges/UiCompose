@@ -12,6 +12,8 @@ import com.example.uicompose.presentation.viewmodel.MainViewModel
 @Composable
 fun MainScreen(){
     val navController = rememberNavController()
+    val viewModel = hiltViewModel<MainViewModel>()
+
     NavHost(
         modifier = Modifier
             .fillMaxSize(),
@@ -19,9 +21,7 @@ fun MainScreen(){
         startDestination = "home"
     ) {
         composable("home") {
-            //Get viewModel
-            val viewModel = hiltViewModel<MainViewModel>()
-            HomeScreen(navController, viewModel)
+             HomeScreen(navController, viewModel)
         }
     }
 }

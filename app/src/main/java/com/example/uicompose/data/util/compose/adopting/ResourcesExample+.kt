@@ -1,4 +1,4 @@
-package com.example.uicompose.presentation.ui.screen.adopting
+package com.example.uicompose.data.util.compose.adopting
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding

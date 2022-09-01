@@ -1,4 +1,4 @@
-package com.example.uicompose.presentation.ui.screen.foundation
+package com.example.uicompose.data.util.compose.foundation
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*

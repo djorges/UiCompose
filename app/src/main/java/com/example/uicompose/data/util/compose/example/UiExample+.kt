@@ -1,4 +1,4 @@
-package com.example.uicompose.presentation.ui.screen
+package com.example.uicompose.data.util.compose.example
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
@@ -23,11 +23,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.uicompose.R
-import com.example.uicompose.domain.model.Movie
 import com.example.uicompose.presentation.ui.theme.Shapes
 
 private val AppBarHeight = 200.dp
 
+/**
+ * Example: Ui with Compose(youtube)
+ *
+ * */
 @Preview(
     name = "First screen",
     showBackground = true,
@@ -65,7 +68,7 @@ fun Content(movie: Movie){
 }
 
 @Composable
-fun Description(movie:Movie){
+fun Description(movie: Movie){
     Text(
         text = movie.description!!,
         fontWeight = Medium,
@@ -125,7 +128,7 @@ fun IconInfo(
 }
 
 @Composable
-fun TopBar(movie:Movie){
+fun TopBar(movie: Movie){
     //TopAppBar Content
     TopAppBar(
         contentPadding = PaddingValues(),
@@ -237,3 +240,13 @@ fun CircularButton(
         )
     }
 }
+
+data class Movie(
+    val id: Int? = null,
+    val title: String? = null,
+    val category: String? = null,
+    val rating:Float? = null,
+    val year: Int? = null,
+    val durationMil: Int? = null,
+    val description: String? = null
+)
