@@ -11,6 +11,12 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.example.uicompose.presentation.viewmodel.MainViewModel
 
+/**
+ * TODO:
+ * Crear ListItem
+ * min 35:16  https://youtu.be/Z2fwVf-SJCs
+ *
+ * */
 @Composable
 fun HomeScreen(
     navController: NavHostController,
